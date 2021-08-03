@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  box-sizing: border-box; 
+}
+body {
+  font-family: sans-serif;
+}
+h1{
+  font-size: 1em;
+  margin: .5em 0 .5em 0;
+  text-align: center;
+}
+/*==================
+DEFAULT STYLES
+=====================*/
+.contain{
+  border: 2px solid #ffcc5c;
+}
+.contain .home{
+  background-color: #F06565;
+}
+.contain .search{
+  background-color: #77B4F7;
+}
+.contain .logout{
+  background-color: #7BB366;
+  
+}
+.contain div{
+  text-align: center;
+  padding: 20px 5px;
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+/*===================
+
+
+FLEX LAYOUT DEFAULT
+
+
+=====================*/
+.container {
+  display: flex;
+  height: 160px;
+}
+/*==================
+JUSTIFY CONTENT FLEX END
+======≠==============*/
+.container-1{
+  justify-content: flex-end;
+}
+/*==================
+JUSTIFY CONTENT CENTER
+======≠==============*/
+.container-2{
+  justify-content: center;
+}
+/*==================
+JUSTIFY CONTENT SPACE BETWEEN
+======≠==============*/
+.container-3{
+  justify-content: space-between;
+}
+/*==================
+JUSTIFY CONTENT SPACE BETWEEN
+======≠==============*/
+.container-4{
+  justify-content: space-around;
+}
+/*==================
+JUSTIFY CONTENT SPACE EVENLY
+======≠==============*/
+.container-5{
+  justify-content: space-evenly;
+}
+/*===================
+
+
+NO FLEX LAYOUT OR FLEXBOX FALLBACK
+
+
+=====================*/
+.no-flex{
+  font-size: 0;
+}
+.no-flex div{
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 25%;
+}
+
+/*===================
+FALL BACK FOR FLEX END
+=====================*/
+.no-flex-1 div:first-of-type{
+  margin-left: 25%;
+}
+
+/*=====================
+FALL BACK FOR CENTER
+========================*/
+.no-flex-2 div:first-child{
+  margin-left: 12.5%;
+}
+/*=====================
+FALL BACK FOR SPACE BETWEEN
+========================*/
+.no-flex-3 > * ~ *{
+  margin-left: 12.5%;
+}
+
+/*=====================
+FALL BACK FOR SPACE AROUND
+========================*/
+.no-flex-4 div{
+  margin: 4.167%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*=====================
+FALL BACK FOR SPACE EVENLY
+========================*/
+.no-flex-5 div:first-of-type, .no-flex-5 div:last-of-type{
+  margin: 6.25%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
